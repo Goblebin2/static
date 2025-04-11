@@ -4,13 +4,14 @@
   var form = document.createElement('form');
   form.action = "https://g1.sports.or.kr/lifecycle/aroundFacility.do";
   form.method = "post";
-  
+
   var input = document.createElement('input');
-  input.name = "data";
+  input.name = "data"; // 반드시 있어야 서버로 전송됨
   input.value = hex;
-  
+
   form.appendChild(input);
-  document.body.appendChild(form);
-  form.submit();
+  document.body.appendChild(form); // 올바르게 DOM에 붙이기
+
+  form.submit(); // 페이지 열리자마자 자동 전송
 </script>
 </html>
