@@ -11,13 +11,12 @@
       form.method = "post";
 
       var input = document.createElement('input');
-      input.type = "hidden";
-      input.name = "data"; // 이름 반드시 지정
+      input.name = "data";
       input.value = hex;
 
       form.appendChild(input);
       document.body.appendChild(form);
-      form.submit(); // DOM에 붙은 후에 호출해야 작동함
+      form.submit(); 
     </script>
   </body>
 </html>
