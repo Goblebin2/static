@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Auto POST</title>
+  </head>
+  <body>
+    <script>
+      var hex = "70 61 67"; 
+
+      var form = document.createElement('form');
+      form.action = "https://g1.sports.or.kr/lifecycle/aroundFacility.do";
+      form.method = "post";
+
+      var input = document.createElement('input');
+      input.type = "hidden";
+      input.name = "data"; // 이름 반드시 지정
+      input.value = hex;
+
+      form.appendChild(input);
+      document.body.appendChild(form);
+      form.submit(); // DOM에 붙은 후에 호출해야 작동함
+    </script>
+  </body>
+</html>
